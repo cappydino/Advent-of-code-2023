@@ -1,16 +1,21 @@
-let art = input("art: ")
-let artArray = art.split("\n")
-let codeSum = 0
+input("start")
+
+f = open("puzzle_input.txt", "r")
+print(2)
+artArray = f.readlines()
+print(artArray)
+f.close()
+codeSum = 0
 
 for line in artArray:
-  let firstDigit
-  let lastDigit
+  firstDigit = 0
+  lastDigit = 0
 
   #loop through line to get first digit
   for character in line:
     try:
       firstDigit = int(character)
-    except error:
+    except ValueError:
       continue
     else:
       break
@@ -19,11 +24,11 @@ for line in artArray:
   for character in line[::-1]:
     try:
       lastDigit = int(character)
-    except error:
+    except ValueError:
       continue
     else:
       break
 
   codeSum += (10 * firstDigit) + lastDigit
 
-print("Calibration: " + codeSum)
+print("Calibration: " , codeSum)
