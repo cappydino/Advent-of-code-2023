@@ -1,6 +1,6 @@
 
 with open("/workspaces/Advent-of-code-2023/day_one/puzzle_input.txt", "r") as file:
-  artArray = file.readlines()
+  artArray = file.readlines() 
 
 valid_digits = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 def isNum(character):
