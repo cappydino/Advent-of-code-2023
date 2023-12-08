@@ -28,12 +28,13 @@ for hand in inputs:
 
     for ct in ['A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2']:
         if ct != 'J':
-            typesWithJokers.append(sum([c[i] == ct for i in range(len(c))])+jokers)
+            typesWithJokers.append(
+                sum([c[i] == ct for i in range(len(c))])+jokers)
         typesWithoutJokers.append(sum([c[i] == ct for i in range(len(c))]))
-    
+
     maxWithJokers = max(typesWithJokers)
     maxOther = max(typesWithoutJokers)
-    
+
     if maxWithJokers == 5:
         metadata += 'a'
     elif maxWithJokers == 4:
@@ -50,11 +51,11 @@ for hand in inputs:
             metadata += 'f'
     else:
         metadata += 'g'
-    
+
     metadata += ''.join([cardDict[c[i]] for i in range(len(c))])
     sortedHands.append([hand, metadata])
 
-sortedHands.sort(key= lambda x: x[1])
+sortedHands.sort(key=lambda x: x[1])
 
 
 gameValue = 0

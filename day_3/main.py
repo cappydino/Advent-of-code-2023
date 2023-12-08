@@ -2,17 +2,21 @@ with open("/workspaces/Advent-of-code-2023/day_3/input.txt", "r") as file:
     schematic = file.readlines()
 
 symbols = ["*", "+", "&", "/", "#", "%", "@", "=", "-", "$"]
+
+
 def charIsSymbol(char):
     for symbol in symbols:
         if char == symbol:
             return True
     return False
 
+
 def symbolInString(str):
     for char in str:
         if charIsSymbol(char):
             return True
     return False
+
 
 def findNumbers(line):
     numbers = []
@@ -34,8 +38,9 @@ def findNumbers(line):
 
     if onNum:
         numbers.append([startIndex, len(line) - 1])
-    
+
     return numbers
+
 
 schematicSum = 0
 
@@ -59,7 +64,7 @@ for i, line in enumerate(schematic):
             if symbolInString(charsAbove):
                 schematicSum += int(line[startIndex:endIndex+1])
                 continue
-            
+
         # check characters to left and right
         if charIsSymbol(line[max(startIndex - 1, 0)]):
             schematicSum += int(line[startIndex:endIndex+1])
@@ -104,6 +109,7 @@ def findWholeNum(string, index):
 
     return int(string[startIndex:endIndex + 1])
 
+
 def charIsNum(char):
     try:
         int(char)
@@ -111,12 +117,14 @@ def charIsNum(char):
         return False
     return True
 
+
 def findGears(string):
     indicies = []
     for i, char in enumerate(string):
         if char == '*':
             indicies.append(i)
     return indicies
+
 
 gearRatioSum = 0
 
@@ -126,12 +134,12 @@ for i, line in enumerate(schematic):
         # left and right
         if gearIndex > 0:
             if charIsNum(line[gearIndex - 1]):
-                neighbors.append((-1,0))
-        
+                neighbors.append((-1, 0))
+
         if gearIndex < len(line) - 1:
             if charIsNum(line[gearIndex + 1]):
-                neighbors.append((1,0))
-        
+                neighbors.append((1, 0))
+
         # top
         if i > 0:
             thingy = [False, False, False]
@@ -139,49 +147,51 @@ for i, line in enumerate(schematic):
             if gearIndex > 0:
                 if charIsNum(schematic[i-1][gearIndex - 1]):
                     thingy[0] = True
-            
+
             if charIsNum(schematic[i-1][gearIndex]):
                 thingy[1] = True
-            
+
             if gearIndex < len(line) - 1:
                 if charIsNum(schematic[i-1][gearIndex + 1]):
                     thingy[2] = True
 
             if thingy[1]:
-                neighbors.append((0,-1))
+                neighbors.append((0, -1))
             else:
                 if thingy[0]:
-                    neighbors.append((-1,-1))
+                    neighbors.append((-1, -1))
                 if thingy[2]:
-                    neighbors.append((1,-1))
-        
+                    neighbors.append((1, -1))
+
         # bottom
         if i < len(line) - 1:
             thingy = [False, False, False]
-            
+
             if gearIndex > 0:
                 if charIsNum(schematic[i+1][gearIndex-1]):
                     thingy[0] = True
-                
+
                 if charIsNum(schematic[i+1][gearIndex]):
                     thingy[1] = True
-                
+
                 if gearIndex < len(line) - 1:
                     if charIsNum(schematic[i+1][gearIndex+1]):
                         thingy[2] = True
-            
+
             if thingy[1]:
-                neighbors.append((0,1))
+                neighbors.append((0, 1))
             else:
                 if thingy[0]:
-                    neighbors.append((-1,1))
+                    neighbors.append((-1, 1))
                 if thingy[2]:
-                    neighbors.append((1,1))
-        
+                    neighbors.append((1, 1))
+
         if len(neighbors) == 2:
-            firstGearNum = findWholeNum(schematic[i + neighbors[0][1]], gearIndex + neighbors[0][0])
-            
-            secondGearNum = findWholeNum(schematic[i + neighbors[1][1]], gearIndex + neighbors[1][0])
+            firstGearNum = findWholeNum(
+                schematic[i + neighbors[0][1]], gearIndex + neighbors[0][0])
+
+            secondGearNum = findWholeNum(
+                schematic[i + neighbors[1][1]], gearIndex + neighbors[1][0])
 
             gearRatioSum += firstGearNum*secondGearNum
 

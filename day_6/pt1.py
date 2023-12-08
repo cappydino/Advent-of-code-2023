@@ -9,7 +9,7 @@ output = 1
 for i in range(len(times)):
     time = int(times[i])
     record = int(records[i])
-    
+
     minTime = time
     maxTime = 0
 
@@ -26,7 +26,7 @@ for i in range(len(times)):
             print(t, d)
             maxTime = t
             break
-    
+
     output *= maxTime - minTime + 1
 
 print(output)

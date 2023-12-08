@@ -27,7 +27,7 @@ for hand in inputs:
     types = []
     for ct in cardTypes:
         types.append(sum([c[i] == ct for i in range(len(c))]))
-    
+
     if max(types) == 5:
         metadata += 'a'
     elif max(types) == 4:
@@ -44,11 +44,11 @@ for hand in inputs:
             metadata += 'f'
     else:
         metadata += 'g'
-    
+
     metadata += ''.join([cardDict[c[i]] for i in range(len(c))])
     sortedHands.append([hand, metadata])
 
-sortedHands.sort(key= lambda x: x[1])
+sortedHands.sort(key=lambda x: x[1])
 
 gameValue = 0
 for i, hand in enumerate(reversed(sortedHands)):

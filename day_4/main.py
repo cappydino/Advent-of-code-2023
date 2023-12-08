@@ -3,14 +3,16 @@ from time import sleep
 with open("/workspaces/Advent-of-code-2023/day_4/input.txt", "r") as file:
     cards = file.readlines()
 
+
 def extractNums(numbers):
     nums = []
     i = 1
     while i < len(numbers):
         nums.append(numbers[i-1:i+1])
         i += 3
-    
+
     return nums
+
 
 def findMatches(card):
     cardMatches = 0
@@ -44,5 +46,5 @@ for cardIndex, amountOfCards in enumerate(ownedCards):
     matches = findMatches(cards[cardIndex])
     for i in range(matches):
         ownedCards[cardIndex + 1 + i] += amountOfCards
-    
+
 print("part 2:", sum(ownedCards), "cards")

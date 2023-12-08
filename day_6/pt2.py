@@ -15,6 +15,6 @@ print(time, record)
 # lowt =   ceil( (time - sqrt(time*time - 4*record)) / 2)
 # hight = floor( (time + sqrt(time*time - 4*record)) / 2)
 
-lowt = ceil( (time - sqrt(time*time - 4*record)) / 2)
-hight = floor( (time + sqrt(time*time - 4*record)) / 2)
+lowt = ceil((time - sqrt(time*time - 4*record)) / 2)
+hight = floor((time + sqrt(time*time - 4*record)) / 2)
 print(hight - lowt + 1)
