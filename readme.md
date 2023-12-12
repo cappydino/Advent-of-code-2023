@@ -8,13 +8,13 @@ Day  7: pt1:    8PM pt2: 9:30PM
 Day  8: pt1:   12PM pt2:    5PM
 Day  9: pt1: 8:50AM pt2: 8:52AM
 Day 10: pt1:    5PM pt2:    8PM + 1
-Day 11: pt1:    9PM pt2:
+Day 11: pt1:    9PM pt2:   10PM
 
 
 
 ```
 11PM│             ¦              ¦                                              
-10PM│             ¦              ¦                                              
+10PM│             ¦              ¦  ¦                                           
  9PM│    ¦  ¦     ¦     ¦        ¦  │                                           
  8PM│ ¦  ¦  ¦     ¦     │        ¦  ║                                           
  7PM│ ¦  ¦  ¦     ¦     │        ¦  ║                                           
