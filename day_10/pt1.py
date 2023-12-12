@@ -51,7 +51,10 @@ def step(coords, dir):
         return (coords[0] - 1, coords[1])
 
 def coordConnects(coords, dir):
-    return connects(inputs[ci(coords)], dir, inputs[ci(step(coords, dir))])
+    try:
+        return connects(inputs[ci(coords)], dir, inputs[ci(step(coords, dir))])
+    except IndexError:
+        return False
 
 def moveThroughPipe(coordDir):
     coord, dir = coordDir
