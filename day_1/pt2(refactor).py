@@ -1,6 +1,6 @@
 """pt2"""
 
-with open("/workspaces/Advent-of-code-2023/day_1/puzzle_input.txt", "r", encoding="utf-8") as file:
+with open("./day_1/puzzle_input.txt", "r", encoding="utf-8") as file:
     lines = file.read().splitlines()
 
 digits = ["one", "two", "three", "four",

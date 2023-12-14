@@ -1,6 +1,6 @@
 from time import sleep
 
-with open("/workspaces/Advent-of-code-2023/day_5/input.txt", "r") as file:
+with open("./day_5/input.txt", "r") as file:
     almanac = file.read()
 
 
@@ -37,4 +37,4 @@ for block in blocks:
 ms = seeds[0][0]
 for seed in seeds:
     ms = min(ms, seed[0])
-print(seeds, ms)
+print(ms)

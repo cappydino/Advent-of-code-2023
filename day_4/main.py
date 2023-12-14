@@ -1,6 +1,6 @@
 from time import sleep
 
-with open("/workspaces/Advent-of-code-2023/day_4/input.txt", "r") as file:
+with open("./day_4/input.txt", "r") as file:
     cards = file.readlines()
 
 

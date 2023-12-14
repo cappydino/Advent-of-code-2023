@@ -1,4 +1,4 @@
-with open("/workspaces/Advent-of-code-2023/day_8/input.txt", "r") as file:
+with open("./day_8/input.txt", "r") as file:
     inputs = file.read().splitlines()
 
 instructions = inputs[0]

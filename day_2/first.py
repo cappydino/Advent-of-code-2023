@@ -1,6 +1,6 @@
 import re
 
-with open("/workspaces/Advent-of-code-2023/day_2/input-txt", "r") as file:
+with open("./day_2/input.txt", "r") as file:
     lines = file.readlines()
 
 

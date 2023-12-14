@@ -1,12 +1,12 @@
 from math import floor, ceil, sqrt
 
-with open("/workspaces/Advent-of-code-2023/day_6/input.txt", "r") as file:
+with open("./day_6/input.txt", "r") as file:
     inputs = file.readlines()
 
 time = int(''.join(inputs[0].split()[1:]))
 record = int(''.join(inputs[1].split()[1:]))
 
-print(time, record)
+# print(time, record)
 
 # d(t) = -t^2 + t*time
 # record = d(t)

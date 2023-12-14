@@ -1,4 +1,4 @@
-with open("/workspaces/Advent-of-code-2023/day_6/input.txt", "r") as file:
+with open("./day_6/input.txt", "r") as file:
     inputs = file.readlines()
 
 times = inputs[0].split()[1:]
@@ -16,14 +16,14 @@ for i in range(len(times)):
     for t in range(time):
         d = t * (time - t)
         if d > record:
-            print(t, d)
+            # print(t, d)
             minTime = t
             break
 
     for t in range(time, 0, -1):
         d = t * (time - t)
         if d > record:
-            print(t, d)
+            # print(t, d)
             maxTime = t
             break
 

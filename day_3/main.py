@@ -1,4 +1,4 @@
-with open("/workspaces/Advent-of-code-2023/day_3/input.txt", "r") as file:
+with open("./day_3/input.txt", "r") as file:
     schematic = file.readlines()
 
 symbols = ["*", "+", "&", "/", "#", "%", "@", "=", "-", "$"]

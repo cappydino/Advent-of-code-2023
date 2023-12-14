@@ -1,6 +1,6 @@
 """pt1"""
 
-with open("/workspaces/Advent-of-code-2023/day_11/input.txt", "r", encoding="utf-8") as file:
+with open("./day_11/input.txt", "r", encoding="utf-8") as file:
     inputs = file.read().splitlines()
 
 doubleRows = [i for i in range(len(inputs)) if not '#' in inputs[i]]
