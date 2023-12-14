@@ -15,8 +15,8 @@ def reflection(block, isRotated):
     
     for i in doubles:
         isReflection = True
-        for j in (a := range(min(i, len(lines) - i))):
-            if (b := lines[i + j]) != (c := lines[i - 1 - j]):
+        for j in range(min(i, len(lines) - i)):
+            if lines[i + j] != lines[i - 1 - j]:
                 isReflection = False
                 break
         if isReflection:
