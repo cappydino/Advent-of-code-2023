@@ -18,25 +18,27 @@ Day 17: XXXXXXXXXXXXXXXXXXXXXXXX
 Day 18: XXXXXXXXXXXXXXXXXXXXXXXX  
 Day 19: pt1:    5PM pt2: XXXXXXX  
 Day 20: XXXXXXXXXXXXXXXXXXXXXXXX  
+Day 21: pt1:    8AM pt2: XXXXXXX
 
 ``` chart
-12AM|             X              ¦  X  X              X  X  X  X                 
-11PM│       ╷     X              ¦  X  X              X  X  X  X                 
-10PM│       ¦     X              ¦  X  X              X  X  X  X                 
- 9PM│       ¦     X     ╷        ¦  X  X              X  X  X  X                 
- 8PM│    ¦  ¦     X     ¦        ¦  │  X  ¦        ╷  X  X  X  X                 
- 7PM│ ¦  ¦  ¦     X     │        ¦  ║  X  ¦        ¦  X  X  X  X                 
- 6PM│ ¦  ¦  ¦     X     │        ¦  ║  X  ¦        ¦  X  X  X  X                 
- 5PM│ ¦  ¦  ¦     X     │        ¦  ║  X  ¦        ¦  X  X  X  X                 
- 4PM│ ¦  ¦  ¦     X     │  ¦     │  ║  X  │        ¦  X  X  │  X                 
- 3PM│ ¦  ¦  ¦     X     │  ¦     │  ║  X  │        ¦  X  X  │  X                 
- 2PM│ ¦  ¦  ¦     X     │  ¦     │  ║  X  │        ¦  X  X  │  X                 
- 1PM│ ¦  ¦  ¦     │     │  ¦     │  ║  X  │     ¦  ¦  X  X  │  X                
-12PM│ ¦  ¦  ¦     │     │  ¦     │  ║  X  │     ¦  ¦  X  X  │  X                 
-10AM│ ¦  ¦  ¦  ¦  │  ¦  │  │     │  ║  X  │  │  ¦  ¦  X  X  │  X                 
- 9AM│ ¦  ¦  ¦  ¦  │  ¦  │  │     │  ║  X  │  │  ¦  │  X  X  │  X                 
- 8AM│ ¦  ¦  ¦  ¦  │  │  │  │  │  │  ║  X  │  │  │  │  X  X  │  X                 
- ...│ ¦  ¦  ¦  ¦  │  │  │  │  │  │  ║  X  │  │  │  │  X  X  │  X                 
-12AM└─┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──╨──X──┴──┴──┴──┴──X──X──┴──X─────────────────
+12AM|             X              ¦  X  X              X  X  X  X  X              
+11PM│       ╷     X              ¦  X  X              X  X  X  X  X              
+10PM│       ¦     X              ¦  X  X              X  X  X  X  X              
+ 9PM│       ¦     X     ╷        ¦  X  X              X  X  X  X  X              
+ 8PM│    ¦  ¦     X     ¦        ¦  │  X  ¦        ╷  X  X  X  X  X              
+ 7PM│ ¦  ¦  ¦     X     │        ¦  ║  X  ¦        ¦  X  X  X  X  X              
+ 6PM│ ¦  ¦  ¦     X     │        ¦  ║  X  ¦        ¦  X  X  X  X  X              
+ 5PM│ ¦  ¦  ¦     X     │        ¦  ║  X  ¦        ¦  X  X  X  X  X              
+ 4PM│ ¦  ¦  ¦     X     │  ¦     │  ║  X  │        ¦  X  X  │  X  X              
+ 3PM│ ¦  ¦  ¦     X     │  ¦     │  ║  X  │        ¦  X  X  │  X  X              
+ 2PM│ ¦  ¦  ¦     X     │  ¦     │  ║  X  │        ¦  X  X  │  X  X              
+ 1PM│ ¦  ¦  ¦     │     │  ¦     │  ║  X  │     ¦  ¦  X  X  │  X  X             
+12PM│ ¦  ¦  ¦     │     │  ¦     │  ║  X  │     ¦  ¦  X  X  │  X  X              
+10AM│ ¦  ¦  ¦  ¦  │  ¦  │  │     │  ║  X  │  │  ¦  ¦  X  X  │  X  X              
+ 9AM│ ¦  ¦  ¦  ¦  │  ¦  │  │     │  ║  X  │  │  ¦  │  X  X  │  X  X              
+ 8AM│ ¦  ¦  ¦  ¦  │  │  │  │  │  │  ║  X  │  │  │  │  X  X  │  X  X               
+ 7AM| ¦  ¦  ¦  ¦  │  │  │  │  │  │  ║  X  │  │  │  │  X  X  │  X  │              
+ ...│ ¦  ¦  ¦  ¦  │  │  │  │  │  │  ║  X  │  │  │  │  X  X  │  X  │              
+12AM└─┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──╨──X──┴──┴──┴──┴──X──X──┴──X──┴──────────────
       1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 
 ```
