@@ -2,27 +2,27 @@ Day  1: 8PM
 Day  2: 9PM  
 Day  3: 11:30PM  
 Day  4: 11AM  
-Day  5: pt1:    2PM pt2: XXXXXXX  
+Day  5: pt1:    2PM pt2: Did not solve(DNS)  
 Day  6: pt1: 9:30AM pt2:    12AM  
 Day  7: pt1:    8PM pt2:  9:30PM  
 Day  8: pt1:   12PM pt2:     5PM  
 Day  9: pt1: 8:50AM pt2:  8:52AM  
 Day 10: pt1:    5PM pt2:     8PM + 1  
-Day 11: pt1:    9PM pt2: XXXXXXX  
-Day 12: XXXXXXXXXXXXXXXXXXXXXXXX  
+Day 11: pt1:    9PM pt2: DNS  
+Day 12: DNS  
 Day 13: pt1:    5PM pt2:     9PM  
 Day 14: pt1:   11AM pt2: 11:30AM  
 Day 15: pt1: 9:30AM pt2:     2PM  
 Day 16: pt1:   10AM pt2:  8:30PM  
-Day 17: XXXXXXXXXXXXXXXXXXXXXXXX  
-Day 18: XXXXXXXXXXXXXXXXXXXXXXXX  
-Day 19: pt1:    5PM pt2: XXXXXXX  
-Day 20: XXXXXXXXXXXXXXXXXXXXXXXX  
-Day 21: pt1:    8AM pt2: XXXXXXX
-Day 22: XXXXXXXXXXXXXXXXXXXXXXXX
-Day 23: pt1:    4PM pt2:     5PM
-Day 24: pt1:   12AM pt2: XXXXXXX
-Day 25: I technicaly found a solution, it would just take a few years to run
+Day 17: DNS  
+Day 18: DNS  
+Day 19: pt1:    5PM pt2: DNS  
+Day 20: DNS  
+Day 21: pt1:    8AM pt2: DNS  
+Day 22: DNS  
+Day 23: pt1:    4PM pt2:     5PM  
+Day 24: pt1:   12AM pt2: DNS  
+Day 25: I technicaly found a solution, it would just take a few years to run  
 
 ``` chart
 12AM|             X              ¦  X  X              X  X  X  X  X  X     X  X  
